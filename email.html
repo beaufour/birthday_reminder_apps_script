@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <p><b>List of people with birthdays today: </b></p>
+  <ul>
+  <? for (var i = 0; i < birthdays.length; ++i) { 
+       var birthday = birthdays[i]; ?>
+    <li><?=birthday[0]?><? if (birthday[1]) { ?> (<?=birthday[1]?>)<? } ?></li>
+  <? } ?>
+  </ul>
+  </body>
+</html>
+
+
